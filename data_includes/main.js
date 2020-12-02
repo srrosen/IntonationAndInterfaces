@@ -23,47 +23,64 @@ Header(
 
 newTrial( "intro" ,
     newImage("Slide1.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide2.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide3.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide4.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide5.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide6.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide7.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide8.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
-        .wait(),
+        .wait()
+    ,
     newImage("Slide9.jpeg")
-        .print(),
+        .print()
+    ,
     newButton("Next")
         .print()
         .wait()
