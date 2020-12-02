@@ -21,64 +21,9 @@ Header(
 .log( "Name" , getVar("ParticipantName") )
 // This log command adds a column reporting the participant's name to every line saved to the results
 
-newTrial( "welcome" ,
-    newImage("Slide1.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide2.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide3.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide4.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide5.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide6.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide7.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide8.png")
-        .print()
-    ,
-    newButton("Next")
-        .print()
-        .wait()
-    ,
-    newImage("Slide9.png")
+Template("IntroTable.csv",
+    variable = newTrial( "welcome" ,
+    newImage("variable.ImageFile")
         .print()
     ,
     newButton("Next")
