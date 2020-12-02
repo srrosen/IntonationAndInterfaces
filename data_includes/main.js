@@ -61,4 +61,8 @@ newTrial( "final" ,
     ,
     // Uploads the recordings
     UploadRecordings("sendAsync", "noblock")
+    ,
+    newButton("Finish")
+            .print()
+            .wait()
         )
