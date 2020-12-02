@@ -24,24 +24,51 @@ InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label
 
 //introduction and instructions
 NewTrial(
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
-newImage("2fishRoundTank.png")
-    .print(),
+        newImage("Slide1.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide2.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide3.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide4.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide5.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide6.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide7.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide8.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
+        newImage("Slide9.jpeg")
+            .print(),
+        newButton("Next")
+            .print()
+            .wait(),
 )   
 
 Template( variable => 
@@ -52,97 +79,6 @@ Template( variable =>
          newButton("Next")
         .print()
         .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait()
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait()
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
-        newImage(variable.ImageFile)
-         .print(),
-         newButton("Next")
-        .print()
-        .wait(),
-        newMediaRecorder("happiness", "audio").print().log().wait()
     )
 
 newTrial( "final" ,
