@@ -90,7 +90,7 @@ newTrial( "welcome" ,
 // This Template command generates as many trials as there are rows in myTable.csv
 Template( "myTable.csv" ,
     // Row will iteratively point to every row in myTable.csv
-    row => newTrial( "experiment" ,
+    variable => newTrial( "experiment" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
             .print(),
