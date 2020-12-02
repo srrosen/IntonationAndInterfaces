@@ -4,7 +4,7 @@ InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label
 
 // Show the 'intro' trial first, then all the 'recordTrial' trial
 // then send the results and finally show the trial labeled 'final'
-Sequence( "intro", "recordTrial", "final" )
+Sequence( "welcome", "recordTrial", "final" )
 
 
 // What is in Header happens at the beginning of every single trial
@@ -21,7 +21,7 @@ Header(
 .log( "Name" , getVar("ParticipantName") )
 // This log command adds a column reporting the participant's name to every line saved to the results
 
-newTrial( "intro" ,
+newTrial( "welcome" ,
     newImage("Slide1.jpeg")
         .print()
     ,
