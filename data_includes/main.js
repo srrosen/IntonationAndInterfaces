@@ -39,12 +39,13 @@ Template( "myTable.csv" ,
     variable => newTrial( "experiment" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
-            .print(),
-        newMediaRecorder("recording", "audio").print().log().wait()
+            .print()
         ,
         newButton("Next")
             .print()
             .wait()
+        ,
+        newMediaRecorder("recording", "audio").print().log().wait()
     )
 )
 
