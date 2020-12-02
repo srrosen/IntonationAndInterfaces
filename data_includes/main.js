@@ -56,6 +56,9 @@ newTrial( "final" ,
     newText("<p>Thank you for your participation!</p>")
             .print()
     ,
+    newImage("Slide26.png")
+            .print()
+    ,
     // Uploads the recordings
     UploadRecordings("sendAsync", "noblock")
         )
