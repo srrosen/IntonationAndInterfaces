@@ -22,10 +22,10 @@ Header(
 // This log command adds a column reporting the participant's name to every line saved to the results
 
 Template("IntroTable.csv",
-    variable = newTrial( "welcome" ,
+    variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
-        .print()
-    ,
+            .print(),
+    ,     
     newButton("Next")
         .print()
         .wait()
