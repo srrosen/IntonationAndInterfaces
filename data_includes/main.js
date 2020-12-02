@@ -23,7 +23,7 @@ Header(
 
 Template("IntroTable.csv",
     variable = newTrial( "welcome" ,
-    newImage("variable.ImageFile")
+    newImage(variable.ImageFile)
         .print()
     ,
     newButton("Next")
