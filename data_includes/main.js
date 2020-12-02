@@ -24,7 +24,7 @@ Header(
 Template("IntroTable.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
-            .print(),
+            .print()
     ,     
     newButton("Next")
         .print()
