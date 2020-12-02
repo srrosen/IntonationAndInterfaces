@@ -41,11 +41,12 @@ Template( "myTable.csv" ,
         newImage(variable.ImageFile)
             .print()
         ,
+        
+        newMediaRecorder("recording", "audio").print().log()
+        ,
         newButton("Next")
             .print()
             .wait()
-        ,
-        newMediaRecorder("recording", "audio").print().log().wait()
     )
 )
 
