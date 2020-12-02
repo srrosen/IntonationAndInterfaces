@@ -1,11 +1,9 @@
-// This is a simple demo script, feel free to edit or delete it
-// Find a tutorial and the list of availalbe elements at:
-// https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
+InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label("intro")
 
-// Show the 'intro' trial first, then all the 'experiment' trials in a random order
-// then send the results and finally show the trial labeled 'bye'
+// Show the 'intro' trial first, then all the 'recordTrial' trial
+// then send the results and finally show the trial labeled 'final'
 Sequence( "intro", "recordTrial", "final" )
 
 
@@ -22,8 +20,6 @@ Header(
 )
 .log( "Name" , getVar("ParticipantName") )
 // This log command adds a column reporting the participant's name to every line saved to the results
-
-InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label("intro")
 
 newTrial( "intro" ,
     newImage("Slide1.jpeg")
