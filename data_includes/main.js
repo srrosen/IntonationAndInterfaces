@@ -4,7 +4,7 @@ InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label
 
 // Show the 'intro' trial first, then all the 'recordTrial' trial
 // then send the results and finally show the trial labeled 'final'
-Sequence( "welcome", "experiment", "final" )
+Sequence( "welcome", randomize("experiment"), "final" )
 
 
 // What is in Header happens at the beginning of every single trial
