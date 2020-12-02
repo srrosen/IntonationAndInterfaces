@@ -29,6 +29,7 @@ Template("IntroTable.csv",
     newButton("Next")
         .print()
         .wait()
+    )
 )
 
 
