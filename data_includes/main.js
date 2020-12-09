@@ -2,7 +2,7 @@
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
 // Show the 'welcome' trial first, then all the 'experiment' trial
 // then send the results and finally show the trial labeled 'final'
-Sequence( "welcome", randomize("experiment"), "final" )
+Sequence( "welcome", "SampleSlides", randomize("experiment"), "final" )
 InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label("welcome")
 
 Header(
@@ -18,13 +18,24 @@ Header(
 .log( "Name" , getVar("ParticipantName") )
 // This log command adds a column reporting the participant's name to every line saved to the results
 
-Template("IntroTable.csv",
+Template("Instructions.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
-            .size(900,400)
-            .center()
-            .print()
-   
+        .print()
+        .center()
+    ,     
+    newButton("Next")
+        .print()
+        .wait()
+    )
+)
+
+Template("SampleSlides.csv",
+    variable => newTrial( "SampleSlides" ,
+    newImage(variable.ImageFile)
+        .size(730, 246)
+        .print()
+        .center()
     ,     
     newButton("Next")
         .print()
@@ -38,9 +49,9 @@ Template( "myTable.csv" ,
     variable => newTrial( "experiment" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
-            .size(900,400)
-            .center()
+            .size(730, 246)
             .print()
+            .center()
             .log()
         ,
         
@@ -61,9 +72,9 @@ newTrial( "final" ,
             .print()
     ,
     newImage("Slide26.png")
-            .size(900,400)
-            .center()
+            .size(720, 400)
             .print()
+            .center()
     ,
     // Uploads the recordings
     UploadRecordings("sendAsync", "noblock")
