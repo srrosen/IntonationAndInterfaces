@@ -25,7 +25,7 @@ Template("IntroTable.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
             .print()
-            .size(200,200)
+   
     ,     
     newButton("Next")
         .print()
@@ -42,7 +42,7 @@ Template( "myTable.csv" ,
         newImage(variable.ImageFile)
             .print()
             .log()
-            .size(200,200)
+         
         ,
         
         newMediaRecorder("recording", "audio")
