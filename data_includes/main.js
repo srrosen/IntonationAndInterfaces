@@ -1,6 +1,6 @@
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
-InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label("intro")
+InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label("experiment")
 
 // Show the 'intro' trial first, then all the 'recordTrial' trial
 // then send the results and finally show the trial labeled 'final'
@@ -48,7 +48,6 @@ Template( "myTable.csv" ,
         newMediaRecorder("recording", "audio")
             .print()
             .log()
-            .wait()
         ,
         newButton("Next")
             .print()
