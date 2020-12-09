@@ -23,7 +23,7 @@ Template("IntroTable.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
             .print()
-            .size(600,600)
+            .size(500,600)
    
     ,     
     newButton("Next")
@@ -41,7 +41,7 @@ Template( "myTable.csv" ,
         newImage(variable.ImageFile)
             .print()
             .log()
-            .size(600)
+            .size(500,700)
         ,
         
         newMediaRecorder("recording", "audio")
@@ -62,7 +62,7 @@ newTrial( "final" ,
     ,
     newImage("Slide26.png")
             .print()
-            .size(600)
+            .size(500,700)
     ,
     // Uploads the recordings
     UploadRecordings("sendAsync", "noblock")
