@@ -40,9 +40,12 @@ Template( "myTable.csv" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
             .print()
+            .log()
         ,
         
-        newMediaRecorder("recording", "audio").print().log()
+        newMediaRecorder("recording", "audio")
+            .print()
+            .log()
         ,
         newButton("Next")
             .print()
