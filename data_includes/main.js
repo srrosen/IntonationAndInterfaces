@@ -1,13 +1,11 @@
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
 InitiateRecorder("https://plinglab.princeton.edu/IBEX/exptA/exptA-up.php").label("experiment")
-
-// Show the 'intro' trial first, then all the 'recordTrial' trial
+// Show the 'intro' trial first, then all the 'experiment' trial
 // then send the results and finally show the trial labeled 'final'
-Sequence( "welcome", randomize("experiment"), "final" )
+Sequence( Header, "welcome", randomize("experiment"), "final" )
 
 
-// What is in Header happens at the beginning of every single trial
 Header(
     // We will use this global Var element later to store the participant's name
     newVar("ParticipantName")
@@ -42,7 +40,6 @@ Template( "myTable.csv" ,
         newImage(variable.ImageFile)
             .print()
             .log()
-         
         ,
         
         newMediaRecorder("recording", "audio")
