@@ -41,7 +41,7 @@ Template( "myTable.csv" ,
         newImage(variable.ImageFile)
             .print()
             .log()
-            .size(400,400)
+            .size(fit)
         ,
         
         newMediaRecorder("recording", "audio")
@@ -62,7 +62,7 @@ newTrial( "final" ,
     ,
     newImage("Slide26.png")
             .print()
-            .size(400,400)
+            .size(fit)
     ,
     // Uploads the recordings
     UploadRecordings("sendAsync", "noblock")
