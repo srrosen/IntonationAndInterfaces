@@ -22,6 +22,7 @@ Template("IntroTable.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
             .size(900,400)
+            .center()
             .print()
    
     ,     
@@ -38,6 +39,7 @@ Template( "myTable.csv" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
             .size(900,400)
+            .center()
             .print()
             .log()
         ,
@@ -60,6 +62,7 @@ newTrial( "final" ,
     ,
     newImage("Slide26.png")
             .size(900,400)
+            .center()
             .print()
     ,
     // Uploads the recordings
