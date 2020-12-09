@@ -33,7 +33,7 @@ Template("Instructions.csv",
 Template("SampleSlides.csv",
     variable => newTrial( "SampleSlides" ,
     newImage(variable.ImageFile)
-        .size(730, 246)
+        .size(912, 308)
         .print()
         .center()
     ,     
@@ -49,7 +49,7 @@ Template( "myTable.csv" ,
     variable => newTrial( "experiment" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
-            .size(730, 246)
+            .size(912, 308)
             .print()
             .center()
             .log()
@@ -72,7 +72,6 @@ newTrial( "final" ,
             .print()
     ,
     newImage("Slide26.png")
-            .size(720, 400)
             .print()
             .center()
     ,
