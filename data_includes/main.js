@@ -21,8 +21,8 @@ Header(
 Template("IntroTable.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
-            .print()
             .size(900,400)
+            .print()
    
     ,     
     newButton("Next")
@@ -37,9 +37,9 @@ Template( "myTable.csv" ,
     variable => newTrial( "experiment" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
+            .size(900,400)
             .print()
             .log()
-            .size(900,400)
         ,
         
         newMediaRecorder("recording", "audio")
@@ -59,8 +59,8 @@ newTrial( "final" ,
             .print()
     ,
     newImage("Slide26.png")
-            .print()
             .size(900,400)
+            .print()
     ,
     // Uploads the recordings
     UploadRecordings("sendAsync", "noblock")
