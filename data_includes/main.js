@@ -58,6 +58,7 @@ Template( "myTable.csv" ,
         newMediaRecorder("recording", "audio")
             .print()
             .log()
+            .wait()
         ,
         newButton("Next")
             .print()
