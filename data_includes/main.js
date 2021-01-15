@@ -21,9 +21,10 @@ Header(
 Template("Instructions.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
+        .size(1368, 462)
         .print()
         .center()
-    ,     
+    ,
     newButton("Next")
         .print()
         .wait()
@@ -33,10 +34,10 @@ Template("Instructions.csv",
 Template("SampleSlides.csv",
     variable => newTrial( "SampleSlides" ,
     newImage(variable.ImageFile)
-        .size(912, 308)
+        .size(1368, 462)
         .print()
         .center()
-    ,     
+    ,
     newButton("Next")
         .print()
         .wait()
@@ -49,12 +50,12 @@ Template( "myTable.csv" ,
     variable => newTrial( "experiment" ,
         // The actual recording trials and comics start here
         newImage(variable.ImageFile)
-            .size(912, 308)
+            .size(1368, 462)
             .print()
             .center()
             .log()
         ,
-        
+
         newMediaRecorder("recording", "audio")
             .print()
             .log()
@@ -73,6 +74,7 @@ newTrial( "final" ,
             .print()
     ,
     newImage("Slide26.png")
+            .size(1368, 462)
             .print()
             .center()
     ,
