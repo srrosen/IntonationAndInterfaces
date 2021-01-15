@@ -21,11 +21,12 @@ Header(
 Template("Instructions.csv",
     variable => newTrial( "welcome" ,
     newImage(variable.ImageFile)
-        .size(1368, 462)
+        .size(1080, 608)
         .print()
         .center()
     ,
     newButton("Next")
+        .css("font-size", "1.5em")
         .print()
         .wait()
     )
@@ -39,6 +40,7 @@ Template("SampleSlides.csv",
         .center()
     ,
     newButton("Next")
+        .css("font-size", "1.5em")
         .print()
         .wait()
     )
@@ -57,11 +59,13 @@ Template( "myTable.csv" ,
         ,
 
         newMediaRecorder("recording", "audio")
+            .css("font-size", "1.5em")
             .print()
             .log()
             .wait()
         ,
         newButton("Next")
+            .css("font-size", "1.5em")
             .print()
             .wait()
     )
@@ -71,10 +75,11 @@ Template( "myTable.csv" ,
 // Spaces and linebreaks don't matter to the script: we've only been using them for the sake of readability
 newTrial( "final" ,
     newText("<p>Thank you for your participation!</p>")
+            .css("font-size", "1.5em")
             .print()
     ,
     newImage("Slide26.png")
-            .size(1368, 462)
+            .size(1080, 608)
             .print()
             .center()
     ,
@@ -82,6 +87,7 @@ newTrial( "final" ,
     UploadRecordings("sendAsync", "noblock")
     ,
     newButton("Finish")
+            .css("font-size", "1.5em")
             .print()
             .wait()
         )
