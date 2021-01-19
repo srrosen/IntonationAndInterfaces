@@ -94,6 +94,7 @@ Template( "myTable.csv" ,
          newScale("scale1", "Giving information", "Requesting information", "I can't tell")
             .css("font-size", "1.5em")
             .labelsPosition("right")
+            .once()
          ,
          newText("q2", "What did the speaker of the speaker of the yellow dialog box think in the previous panel?")
             .css("font-size", "1.5em")
@@ -101,6 +102,7 @@ Template( "myTable.csv" ,
          newScale("scale2", "The opposite of what's in the yellow box", "What's in the yellow box", "I can't tell")
             .css("font-size", "1.5em")
             .labelsPosition("right")
+            .once()
          ,
          newText("q3", "Who has more information about what's in the yellow dialog box?")
             .css("font-size", "1.5em")
@@ -108,37 +110,36 @@ Template( "myTable.csv" ,
          newScale("scale3", "The person saying it", "The person they're talking to", "They both know the same amount", "I can't tell")
             .css("font-size", "1.5em")
             .labelsPosition("right")
+            .once()
          ,
-        newVar("question", 0)
+        newVar("question", "")
         ,
         getVar("question")
-            .set(v => v + getRandomInt(3))
-        ,
-        newVar("scale")
+            .set(v => getRandomInt(3))
         ,
         getVar("question")
             .test.is("0")
             .success(
                 getText("q1").print(),
-                getVar("scale").set(getScale("scale1")),
                 getScale("scale1")
                 .print()
                 .wait())
+                .log()
             .test.is("1")
             .success(
                 getText("q2").print(),
-                getVar("scale").set(getScale("scale2")),
                 getScale("scale2")
                 .print()
                 .wait()
+                .log()
                 )
             .test.is("2")
             .success(
                 getText("q3").print(),
-                getVar("scale").set(getScale("scale3")),
                 getScale("scale3")
                 .print()
                 .wait()
+                .log()
                 )
         ,
         newMediaRecorder("recording", "audio")
@@ -151,9 +152,6 @@ Template( "myTable.csv" ,
             .css("font-size", "1.5em")
             .print()
             .wait()
-            ,
-        getScale(getVar("scale"))
-            .log
     )
 )
 
