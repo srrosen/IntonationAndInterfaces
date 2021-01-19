@@ -45,6 +45,34 @@ Template("SampleSlides.csv",
         .wait()
     )
 )
+///putting in the questions
+Sequence( randomize("questions") )
+
+newTrial( "questions" ,
+  newText("What is the sentence in the yellow dialog box doing?").print()
+  ,
+  newScale("Giving information", "Requesting information", "I can't tell")
+    .labelsPosition("right")
+    .print()
+    .wait()
+)
+newTrial( "questions" ,
+  newText("What did the speaker of the speaker of the yellow dialog box think in the previous panel?").print()
+  ,
+  newScale("The opposite of what's in the yellow box", "What's in the yellow box", "I can't tell")
+    .labelsPosition("right")
+    .print()
+    .wait()
+)
+newTrial( "questions" ,
+  newText("Who has more information about what's in the yellow dialog box?").print()
+  ,
+  newScale("The person saying it", "The person they're talking to", "They both know the same amount", "I can't tell")
+    .labelsPosition("right")
+    .print()
+    .wait()
+)
+//////
 
 // This Template command generates as many trials as there are rows in myTable.csv
 Template( "myTable.csv" ,
